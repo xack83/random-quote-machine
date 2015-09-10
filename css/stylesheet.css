@@ -2,14 +2,37 @@ body {
 	background-image: url('../img/bg-body.png');
 }
 
+p {
+	font-size: 24px;
+	font-family: Handlee, Serif;
+}
+
+#title {
+	margin-top: 30px;
+	font-family: Rock Salt, Serif;
+	color: #ddd;
+}
+
 .container-fluid {
 	text-align: center;
-	color: #ddd;
+	color: #eee;
 }
 
 #container-quote {
 	padding-top: 20px;
 	padding-left: 60px;
+}
+
+#quote-cont {
+	margin-top: 20px;
+	padding: 20px 20px 20px 20px;
+	border-radius: 2%;
+	border: 1px dotted #aaa;
+	background-color: rgba(20,20,20,0.6);
+}
+
+#buttons-cont {
+	text-align: left;
 }
 
 .face {
@@ -21,6 +44,13 @@ img {
 	width: 420px;
 }
 
-.btn {
-	margin-top: 30px;
+#author {
+	text-align: right;
+	font-style: italic;
+}
+
+#footer {
+	background-color: rgba(255,255,255,0.75);
+	padding: 10px 0px 10px 20px;
+	margin: 0;
 }

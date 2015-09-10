@@ -3,32 +3,39 @@
 <head>
 	<title>Stoic Quotes</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- SCRIPTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div class="container-fluid">
-	<h1>Stoic Quotes</h1>
+	<h1 id="title">Stoic Quotes</h1>
 	<div class="row">
 		<div class="col-md-7" id="container-quote">
-			<p>“If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.” </p>
-			<p>Marcus Aurelius, Meditations</p>
-			<p>
-				<button type="button" class="btn btn-default btn-lg" onclick="getQuote()">New Quote</button>
-				<button type="button" class="btn btn-primary btn-lg">Tweet</button>
-			</p>
+			<div class="container" id="buttons-cont"><p>
+				<button type="button" class="btn btn-default btn-lg" id="new-quote">New Quote</button>
+				<a href="https://twitter.com/intent/tweet?text=hello%20world" id="tweet-quote"><button type="button" class="btn btn-primary btn-lg">Tweet</button></a>
+			</p></div>
+			<div id="quote-cont">
+				<p id="quote"></p>
+				<p id="author"></p>
+			</div>
 		</div>
 		<div class="face col-md-4 col-md-offset-1"><img src="img/bg-face.png"></div>
 	</div>
 
-	
 </div>
-<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-	I don't care
-</nav>
+<div class="navbar-fixed-bottom" id="footer">
+	A site created by <a>Carlos Rodrigo</a> as part of <a>Free Code Camp</a> curriculum
+</div>
 
 </body>
 </html>
